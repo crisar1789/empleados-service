@@ -1,0 +1,34 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.parameta.com/service/empleados"
+targetNamespace="http://www.parameta.com/service/empleados" elementFormDefault="qualified">
+ 
+    <xs:element name="EmpleadoRequest">
+        <xs:complexType>
+            <xs:sequence>
+            	<xs:element name="nombres" type="xs:string"></xs:element>
+            	<xs:element name="apellidos" type="xs:string"></xs:element>
+            	<xs:element name="tipoDocumento" type="xs:string"></xs:element>
+            	<xs:element name="nroDocumento" type="xs:string"></xs:element>
+            	<xs:element name="fechaNacimiento" type="xs:string"></xs:element>
+            	<xs:element name="fechaVinculacion" type="xs:string"></xs:element>
+            	<xs:element name="cargo" type="xs:string"></xs:element>
+            	<xs:element name="salario" type="xs:string"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+ 
+    <xs:element name="EmpleadoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Context" type="tns:SrvResponse"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="SrvResponse">
+    	<xs:sequence>
+    		<xs:element name="codigo" type="xs:string"></xs:element>
+    		<xs:element name="descripcion" type="xs:string"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

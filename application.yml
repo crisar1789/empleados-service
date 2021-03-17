@@ -1,0 +1,7 @@
+server:
+  port : 9002
+
+spring:  jpa:    hibernate:      ddl-auto: update  datasource:    url: jdbc:mysql://localhost:3306/empleadosparameta?serverTimezone=UTC
+    username: parameta
+    password: parameta2021
+    

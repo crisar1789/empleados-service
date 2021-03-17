@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  	<modelVersion>4.0.0</modelVersion>
+  	<groupId>co.parameta.empleados.service</groupId>
+  	<artifactId>empleados-service</artifactId>
+  	<version>1.0.0</version>
+  	
+  	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.2</version>
+	</parent>
+	
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/wsdl4j/wsdl4j -->
+		<dependency>
+		    <groupId>wsdl4j</groupId>
+		    <artifactId>wsdl4j</artifactId>
+		    </dependency>
+		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+		<dependency>
+		    <groupId>javax.xml.bind</groupId>
+		    <artifactId>jaxb-api</artifactId>
+		    </dependency>
+		<!-- https://mvnrepository.com/artifact/javax.jws/javax.jws-api -->
+		<dependency>
+		    <groupId>javax.jws</groupId>
+		    <artifactId>javax.jws-api</artifactId>
+		    <version>1.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.xml.ws/jaxws-api -->
+		<dependency>
+		    <groupId>javax.xml.ws</groupId>
+		    <artifactId>jaxws-api</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.activation/activation -->
+		<dependency>
+		    <groupId>javax.activation</groupId>
+		    <artifactId>activation</artifactId>
+		    <version>1.1</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime -->
+		<dependency>
+		    <groupId>org.glassfish.jaxb</groupId>
+		    <artifactId>jaxb-runtime</artifactId>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+		<dependency>
+		    <groupId>javax.persistence</groupId>
+		    <artifactId>javax.persistence-api</artifactId>
+		</dependency>
+	</dependencies>
+	
+	<!-- <build>
+		<plugins>
+	    	<plugin>
+		        <groupId>org.codehaus.mojo</groupId>
+		        <artifactId>jaxb2-maven-plugin</artifactId>
+		        <version>2.5.0</version>
+		        <executions>
+		                <execution>
+		                        <id>xjc</id>
+		                        <goals>
+		                                <goal>xjc</goal>
+		                        </goals>
+		                </execution>
+		        </executions>
+		        <configuration>
+		                <sources>
+		                        <source>src/main/resources/empleados.xsd</source>
+		                </sources>
+		                <outputDirectory>${project.build.directory}/generated-sources/</outputDirectory>
+		                <clearOutputDir>false</clearOutputDir>
+		        </configuration>
+			</plugin>
+		</plugins>
+	</build> -->
+</project>
